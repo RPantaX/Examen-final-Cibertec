@@ -1,0 +1,10 @@
+<div class="container mt-4">
+  <h2>Elementos filtrados</h2>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let post of filteredPosts">
+      <h5>{{ post.title }}</h5>
+      <p>{{ post.body }}</p>
+      <small>UserID: {{ post.userId }}, PostID: {{ post.id }}</small>
+    </li>
+  </ul>
+</div>
